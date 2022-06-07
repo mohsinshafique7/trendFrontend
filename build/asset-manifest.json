@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5104679.css",
+    "main.js": "/static/js/main.53769c72.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.4f356d6e2107461dbebdd4af9230f3aa.svg",
+    "static/media/logo_bn.svg": "/static/media/logo_bn.eb43922b898473ca242a858b8463d394.svg",
+    "index.html": "/index.html",
+    "static/media/close-btn.svg": "/static/media/close-btn.b35f8619961644182c021e0d6782f3b3.svg",
+    "main.e5104679.css.map": "/static/css/main.e5104679.css.map",
+    "main.53769c72.js.map": "/static/js/main.53769c72.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5104679.css",
+    "static/js/main.53769c72.js"
+  ]
+}
