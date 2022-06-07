@@ -1,24 +1,17 @@
 import React from "react"
 import { Layout, Button } from "antd"
-import styled from "styled-components"
 import { useNavigate } from "react-router-dom"
 
-export const Styles = styled.div`
-  .ant-layout-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    line-height: inherit;
-  }
-`
-
+import logo1 from "../assets/images/logo_bn.svg"
 const Header = () => {
   let navigate = useNavigate()
-  const { Header } = Layout
 
   return (
-    <Styles>
-      <Header className="site-layout-background">
+    <div className="fixed w-full z-10 flex justify-between items-center h-[90px] bg-blue-800">
+      <div className="ml-5">
+        <img className="w-[100px]" src={logo1} alt={"asd"} />
+      </div>
+      <div className="pr-5">
         <Button
           type="primary"
           onClick={() => {
@@ -28,8 +21,8 @@ const Header = () => {
         >
           Log Out
         </Button>
-      </Header>
-    </Styles>
+      </div>
+    </div>
   )
 }
 

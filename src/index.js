@@ -1,15 +1,32 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./index.css"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
-import "antd/dist/antd.css"
 import AppRoutes from "./AppRoutes"
+import { QueryClient, QueryClientProvider } from "react-query"
+import { ReactQueryDevtools } from "react-query/devtools"
+import { store } from "./store/store"
+import { Provider } from "react-redux"
+import "./index.css"
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+    },
+  },
+})
 ReactDOM.render(
   // <React.StrictMode>
-  <AppRoutes>
-    <App />
-  </AppRoutes>,
+
+  <QueryClientProvider client={queryClient}>
+    <Provider store={store}>
+      <AppRoutes>
+        <App />
+      </AppRoutes>
+    </Provider>
+    <ReactQueryDevtools initialIsOpen={false} />
+  </QueryClientProvider>,
   // </React.StrictMode>,
   document.getElementById("root")
 )
